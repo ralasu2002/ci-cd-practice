@@ -1,4 +1,4 @@
-from calculator import add, subtract, multiply, divide, power, modulo
+from calculator import add, subtract, multiply, divide, power, modulo, cube, percentage
 import pytest
 
 def test_add():
@@ -26,3 +26,9 @@ def test_modulo():
 def test_modulo_by_zero():
     with pytest.raises(ValueError):
         modulo(10, 0)
+
+def test_cube():
+    assert cube(3) == 27
+
+def test_percentage():
+    assert percentage(25, 50) == 50
