@@ -1,0 +1,5 @@
+- All new functions in calculator.py must have a matching test in test_calculator.py
+- Always run pytest locally before saying a task is complete
+- Never commit directly to main — always create a branch first
+- Keep functions small and pure (no side effects, no print statements inside calculator.py)
+- Before modifying .github/workflows/*.yml, stop and ask for explicit confirmation
