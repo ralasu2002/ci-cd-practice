@@ -1,4 +1,4 @@
-from calculator import add, subtract, multiply, divide, power, modulo, cube, percentage
+from calculator import add, subtract, multiply, divide, power, modulo, cube, percentage, square_root
 import pytest
 
 def test_add():
@@ -32,3 +32,13 @@ def test_cube():
 
 def test_percentage():
     assert percentage(25, 50) == 50
+
+def test_square_root():
+    assert square_root(9) == 3
+
+def test_square_root_zero():
+    assert square_root(0) == 0
+
+def test_square_root_negative():
+    with pytest.raises(ValueError):
+        square_root(-9)

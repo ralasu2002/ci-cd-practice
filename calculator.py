@@ -25,3 +25,8 @@ def cube(n):
 
 def percentage(part, whole):
     return (part / whole) * 100
+
+def square_root(n):
+    if n < 0:
+        raise ValueError("Cannot take square root of a negative number")
+    return n ** 0.5
